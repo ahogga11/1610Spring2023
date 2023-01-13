@@ -1,2 +1,2 @@
-# UVU_DGM1610_-1-_-2023-
+# UVU_DGM1610-Spring-2023-
 Scripting for Gaming and Animation
