@@ -16,6 +16,9 @@ public class Program
 		myOperator.Compare(3,4);
 		myOperator.CheckPassword("SevenOF9");
 		myOperator.CheckPassword("OU812");
+		myOperator.ConditionalLab(50, 10);
+		myOperator.ConditionalLab2(50, 50);
+		myOperator.ConditionalLab3(20);
     }
 	
     
@@ -39,5 +42,28 @@ public class Operations {
 		} else {
 			Console.WriteLine("Incorrect Password");
 		}
+	}
+	public void ConditionalLab (int value, int value2) {
+	int x = 50;
+	int y = 10; 
+	if(x > y) {
+		Console.WriteLine("Hello World");
+		}
+	}
+	public void ConditionalLab2 (int value, int value2) {
+	int x = 50;
+	int y = 50;
+	if(x == y) {
+		Console.WriteLine("1");
+		} else if (x > y) {
+			Console.WriteLine("2");
+		} else {
+			Console.WriteLine("3");
+		}
+	}
+	public void ConditionalLab3 (int value) {
+	int time = 20;
+	string result = (time < 18) ? "Good day." : "Good evening.";
+		Console.WriteLine(result);
 	}
 }
