@@ -9,7 +9,7 @@ namespace MyApplication
       string name = "Alissa";
       Console.WriteLine(name); 
       int number = 21;
-      Console.WriteLine(number); 
+      Console.WriteLine(number);
      }
   }
 }
