@@ -2,19 +2,19 @@ using System;
 					
 public class Program
 {
-	public GameStates gameStates;
+	public CharacterRelationship characterRelationship;
 	
 	public void Main()
 	{
-		gameStates = new GameStates();
-		gameStates.currentState = GameStates.States.Two;
-		gameStates.CheckState();
+		characterRelationship = new CharacterRelationship();
+		characterRelationship.currentRelationship = CharacterRelationship.Relationship.Two;
+		characterRelationship.CheckRelationship();
 	}
 }
 
-public class GameStates {
+public class CharacterRelationship {
 	
-	public enum States {
+	public enum Relationship {
 		Five,
 		Four,
 		Three,
@@ -22,23 +22,23 @@ public class GameStates {
 		One
 	}
 	
-	public States currentState = States.Five;
+	public Relationship currentRelationship = Relationship.Five;
 	
-	public void CheckState () {
-		switch (currentState) {
-			case States.Five:
+	public void CheckRelationship () {
+		switch (currentRelationship) {
+			case Relationship.Five:
 				Console.WriteLine("I made you your favorite food.");
 				break;
-			case States.Four:
+			case Relationship.Four:
 				Console.WriteLine("Would you like to go see a movie with me?");
 				break;
-			case States.Three:
+			case Relationship.Three:
 				Console.WriteLine("Your hair looks really nice today.");
 				break;
-			case States.Two:
+			case Relationship.Two:
 				Console.WriteLine("The weather is nice today.");
 				break;
-			case States.One:
+			case Relationship.One:
 				Console.WriteLine("Do I know you?");
 				break;
 		}
