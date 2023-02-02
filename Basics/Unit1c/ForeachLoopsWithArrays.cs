@@ -4,7 +4,7 @@ public class Program
 {
 	public void Main()
 	{
-	string[] cars = {"Mustang", "Camero", "HellCat", "Corvette", "Viper", "McLaren"};
+	string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 		foreach(var car in cars) {
 			Console.WriteLine("I love my " + car + ".");		}
 	}
