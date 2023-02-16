@@ -1,11 +1,12 @@
 using UnityEngine;
-System.Collections;
+using System.Collections;
 
-public class MainPlayer : MonoBehaviour
+public class MainPlayer : MonoBehaviour 
 {
-    // Start is called before the first frame update
-    void Start()
+    public string myName;
+    
+    void Start () 
     {
-        Debug.Log("I am alive!");
+        Debug.Log("I am alive and my name is " + myName);
     }
 }
