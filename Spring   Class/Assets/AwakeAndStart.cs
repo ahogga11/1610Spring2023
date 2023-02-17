@@ -1,7 +1,8 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class AwakeAndStart : MonoBehaviour
+public partial class AwakeAndStart: MonoBehaviour
 {
     void Awake ()
     {
