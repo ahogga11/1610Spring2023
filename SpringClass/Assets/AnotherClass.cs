@@ -1,14 +1,13 @@
 using UnityEngine;
-using System.Collections;
 
 public class AnotherClass
 {
-    public int apples;
-    public int bananas;
+    public int Apples;
+    public int Bananas;
     
     
-    private int stapler;
-    private int sellotape;
+    private int _stapler;
+    private int _sellotape;
     
     
     public void FruitMachine (int a, int b)
