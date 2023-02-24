@@ -1,14 +1,13 @@
 using UnityEngine;
-using System.Collections;
 
 public class EnableComponents : MonoBehaviour
 {
-    private Light myLight;
+    private Light _myLight;
     
     
     void Start ()
     {
-        myLight = GetComponent<Light>();
+        _myLight = GetComponent<Light>();
     }
     
     
@@ -16,7 +15,7 @@ public class EnableComponents : MonoBehaviour
     {
         if(Input.GetKeyUp(KeyCode.Space))
         {
-            myLight.enabled = !myLight.enabled;
+            _myLight.enabled = !_myLight.enabled;
         }
     }
 }
