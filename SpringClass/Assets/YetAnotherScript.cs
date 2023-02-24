@@ -1,6 +1,7 @@
 using UnityEngine;
+using System.Collections;
 
-public partial class YetAnotherScript : MonoBehaviour
+public class YetAnotherScript : MonoBehaviour
 {
     public int numberOfPlayerDeaths = 3;
 }
