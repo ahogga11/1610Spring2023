@@ -1,28 +1,27 @@
 using UnityEngine;
-using System.Collections;
 
 public class UsingOtherComponents : MonoBehaviour
 {
     public GameObject otherGameObject;
     
     
-    private AnotherScript anotherScript;
-    private YetAnotherScript yetAnotherScript;
-    private BoxCollider boxCol;
+    private AnotherScript _anotherScript;
+    private YetAnotherScript _yetAnotherScript;
+    private BoxCollider _boxCol;
     
     
     void Awake ()
     {
-        anotherScript = GetComponent<AnotherScript>();
-        yetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
-        boxCol = otherGameObject.GetComponent<BoxCollider>();
+        _anotherScript = GetComponent<AnotherScript>();
+        _yetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
+        _boxCol = otherGameObject.GetComponent<BoxCollider>();
     }
     
     
     void Start ()
     {
-        boxCol.size = new Vector3(3,3,3);
-        Debug.Log("The player's score is " + anotherScript.playerScore);
-        Debug.Log("The player has died " + yetAnotherScript.numberOfPlayerDeaths + " times");
+        _boxCol.size = new Vector3(3,3,3);
+        Debug.Log("The player's score is " + _anotherScript.playerScore);
+        Debug.Log("The player has died " + _yetAnotherScript.numberOfPlayerDeaths + " times");
     }
 }

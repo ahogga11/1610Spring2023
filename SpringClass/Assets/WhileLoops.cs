@@ -1,17 +1,16 @@
 using UnityEngine;
-using System.Collections;
 
 public class WhileLoop : MonoBehaviour
 {
-    int cupsInTheSink = 4;
+    int _cupsInTheSink = 4;
     
     
     void Start ()
     {
-        while(cupsInTheSink > 0)
+        while(_cupsInTheSink > 0)
         {
             Debug.Log ("I've washed a cup!");
-            cupsInTheSink--;
+            _cupsInTheSink--;
         }
     }
 }

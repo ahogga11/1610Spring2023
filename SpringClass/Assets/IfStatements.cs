@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class IfStatements : MonoBehaviour
 {
-    float coffeeTemperature = 85.0f;
-    float hotLimitTemperature = 70.0f;
-    float coldLimitTemperature = 40.0f;
+    float _coffeeTemperature = 85.0f;
+    float _hotLimitTemperature = 70.0f;
+    float _coldLimitTemperature = 40.0f;
     
 
     void Update ()
@@ -12,17 +12,17 @@ public class IfStatements : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
             TemperatureTest();
         
-        coffeeTemperature -= Time.deltaTime * 5f;
+        _coffeeTemperature -= Time.deltaTime * 5f;
     }
     
     
     void TemperatureTest ()
     {
-        if(coffeeTemperature > hotLimitTemperature)
+        if(_coffeeTemperature > _hotLimitTemperature)
         {
             print("Coffee is too hot.");
         }
-        else if(coffeeTemperature < coldLimitTemperature)
+        else if(_coffeeTemperature < _coldLimitTemperature)
         {
             print("Coffee is too cold.");
         }

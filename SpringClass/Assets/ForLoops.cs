@@ -1,14 +1,13 @@
 using UnityEngine;
-using System.Collections;
 
 public class ForLoop : MonoBehaviour
 {
-    int numEnemies = 3;
+    int _numEnemies = 3;
     
     
     void Start ()
     {
-        for(int i = 0; i < numEnemies; i++)
+        for(int i = 0; i < _numEnemies; i++)
         {
             Debug.Log("Creating enemy number: " + i);
         }
