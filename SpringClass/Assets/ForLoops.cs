@@ -1,15 +1,34 @@
 using UnityEngine;
 
-public class ForLoop : MonoBehaviour
+public class IfStatements : MonoBehaviour
 {
-    int _numEnemies = 3;
+    float _coffeeTemperature = 85.0f;
+    float _hotLimitTemperature = 70.0f;
+    float _coldLimitTemperature = 40.0f;
     
-    
-    void Start ()
+
+    void Update ()
     {
-        for(int i = 0; i < _numEnemies; i++)
+        if(Input.GetKeyDown(KeyCode.Space))
+            TemperatureTest();
+        
+        _coffeeTemperature -= Time.deltaTime * 5f;
+    }
+    
+    
+    void TemperatureTest ()
+    {
+        if(_coffeeTemperature > _hotLimitTemperature)
         {
-            Debug.Log("Creating enemy number: " + i);
+            print("Coffee is too hot.");
+        }
+        else if(_coffeeTemperature < _coldLimitTemperature)
+        {
+            print("Coffee is too cold.");
+        }
+        else
+        {
+            print("Coffee is just right.");
         }
     }
 }
