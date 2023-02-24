@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
@@ -8,9 +9,8 @@ public class ExampleClass : MonoBehaviour
     {
         if (other)
         {
-            Transform transform1;
-            Vector3 forward = (transform1 = transform).TransformDirection(Vector3.forward);
-            Vector3 toOther = other.position - transform1.position;
+            Vector3 forward = transform.TransformDirection(Vector3.forward);
+            Vector3 toOther = other.position - transform.position;
 
             if (Vector3.Dot(forward, toOther) < 0)
             {
