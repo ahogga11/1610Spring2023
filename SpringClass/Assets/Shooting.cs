@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class Shooting : MonoBehaviour
 {
@@ -8,12 +7,12 @@ public class Shooting : MonoBehaviour
     public float bulletSpeed;
     
     
-    private Inventory inventory;
+    private Inventory _inventory;
     
     
     void Awake ()
     {
-        inventory = GetComponent<Inventory>();
+        _inventory = GetComponent<Inventory>();
     }
     
     
@@ -25,11 +24,11 @@ public class Shooting : MonoBehaviour
     
     void Shoot ()
     {
-        if(Input.GetButtonDown("Fire1") && inventory.myStuff.bullets > 0)
+        if(Input.GetButtonDown("Fire1") && _inventory.MyStuff.Bullets > 0)
         {
-            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
+            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
             bulletInstance.AddForce(firePosition.forward * bulletSpeed);
-            inventory.myStuff.bullets--;
+            _inventory.MyStuff.Bullets--;
         }
     }
 }
