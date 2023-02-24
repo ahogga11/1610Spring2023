@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class ScopeAndAccessModifiers : MonoBehaviour
 {
@@ -10,15 +9,15 @@ public class ScopeAndAccessModifiers : MonoBehaviour
     private int gamma = 5;
     
     
-    private AnotherClass myOtherClass;
+    private AnotherClass _myOtherClass;
     
     
     void Start ()
     {
         alpha = 29;
         
-        myOtherClass = new AnotherClass();
-        myOtherClass.FruitMachine(alpha, myOtherClass.apples);
+        _myOtherClass = new AnotherClass();
+        _myOtherClass.FruitMachine(alpha, _myOtherClass.Apples);
     }
     
     
