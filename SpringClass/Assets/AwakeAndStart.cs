@@ -1,16 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public partial class AwakeAndStart: MonoBehaviour
-{
-    void Awake ()
+public partial class AwakeAndStart
+{ 
+    public void Awakes ()
     {
         Debug.Log("Awake called.");
     }
-    
-    
-    void Start ()
+    public void Starts ()
     {
         Debug.Log("Start called.");
     }
