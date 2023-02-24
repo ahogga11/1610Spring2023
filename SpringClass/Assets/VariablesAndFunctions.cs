@@ -1,13 +1,12 @@
 using UnityEngine;
-using System.Collections;
 
 public class VariablesAndFunctions : MonoBehaviour
 {
-    private int myInt = 5;
+    private int _myInt = 5;
     void Start()
     {
-        myInt = MultiplyByTwo(myInt);
-        Debug.Log(myInt);
+        _myInt = MultiplyByTwo(_myInt);
+        Debug.Log(_myInt);
     }
 
     int MultiplyByTwo (int number)
