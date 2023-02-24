@@ -1,24 +1,23 @@
 using UnityEngine;
-using System.Collections;
 
 public class SingleCharacterScript : MonoBehaviour
 {
     public class Stuff
     {
-        public int bullets;
-        public int grenades;
-        public int rockets;
+        public int Bullets;
+        public int Grenades;
+        public int Rockets;
         
         public Stuff(int bul, int gre, int roc)
         {
-            bullets = bul;
-            grenades = gre;
-            rockets = roc;
+            Bullets = bul;
+            Grenades = gre;
+            Rockets = roc;
         }
     }
     
     
-    public Stuff myStuff = new Stuff(10, 7, 25);
+    public Stuff MyStuff = new Stuff(10, 7, 25);
     public float speed;
     public float turnSpeed;
     public Rigidbody bulletPrefab;
@@ -45,11 +44,11 @@ public class SingleCharacterScript : MonoBehaviour
     
     void Shoot ()
     {
-        if(Input.GetButtonDown("Fire1") && myStuff.bullets > 0)
+        if(Input.GetButtonDown("Fire1") && MyStuff.Bullets > 0)
         {
-            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
+            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
             bulletInstance.AddForce(firePosition.forward * bulletSpeed);
-            myStuff.bullets--;
+            MyStuff.Bullets--;
         }
     }
 }
