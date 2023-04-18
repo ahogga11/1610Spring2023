@@ -12,7 +12,7 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     void Awake()
     {
-    // Time.timeScale = 1;
+    Time.timeScale = 1;
     }
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             Debug.Log("Game Over!");
             Destroy(gameObject);
-            // Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
 }
