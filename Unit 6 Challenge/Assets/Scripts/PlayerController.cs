@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 20;
 
-    public float xRange = 15;
+    public float xRange = 23;
 
     // Update is called once per frame
     void Update()
