@@ -26,7 +26,7 @@ public class CoinController : MonoBehaviour
             textCoin.text = coin.ToString();
             Col.gameObject.SetActive(false);
         }
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             Vector3 randomPosition = new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10));
             Instantiate(coinPrefab, randomPosition, Quaternion.identity);
