@@ -12,29 +12,43 @@ public class CoinController : MonoBehaviour
     public TextMeshProUGUI textCoin;
     // Start is called before the first frame update
 
-    private void Start()
-    {
-       
-    }
+    public float timeRemaining = 2f;
 
-    public void OnTriggerEnter(Collider Col)
+    void Update()
     {
-        if(Col.gameObject.tag == "Coin")
+        if (timeRemaining > 0)
         {
-            Debug.Log("Coin Collected!");
-            coin = coin + 1;
-            textCoin.text = coin.ToString();
-            Col.gameObject.SetActive(false);
+            timeRemaining -= Time.deltaTime;
         }
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (timeRemaining < 0)
+        {
+            timeRemaining = Random.Range(1, 3);
+            spawn_coin();
+        }
+        void spawn_coin()
         {
             Vector3 randomPosition = new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10));
             Instantiate(coinPrefab, randomPosition, Quaternion.identity);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+
+
+        void OnTriggerEnter(Collider Col)
+        {
+            if (Col.gameObject.tag == "Coin")
+            {
+                Debug.Log("Coin Collected!");
+                coin = coin + 1;
+                textCoin.text = coin.ToString();
+                Col.gameObject.SetActive(false);
+                Destroy(Col);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                Vector3 randomPosition = new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10));
+                Instantiate(coinPrefab, randomPosition, Quaternion.identity);
+            }
+        }
+        // Update is called once per frame
     }
 }
