@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6f39596bc2e9b14c882f7b84ae41147
+guid: 0e2770b1e4edf514fba76d53144a80ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,64 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_items_0
+      name: Spikes
       rect:
         serializedVersion: 2
-        x: 671
-        y: 32
-        width: 65
+        x: 128
+        y: 0
+        width: 128
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ed9e5b05647144cb83678e583df058
-      internalID: -1573645808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Power Up 1
-      rect:
-        serializedVersion: 2
-        x: 669
-        y: 424
-        width: 70
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 569f8250d294ae641aca39d01d597c44
-      internalID: -863126584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Power Up 2
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 40
-        width: 70
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2278614b9d9cee84c971c7ad6bc2ecd5
-      internalID: -2066303639
+      spriteID: 00938b5fc9c431c4bb694df863215999
+      internalID: -1497021219
       vertices: []
       indices: 
       edges: []
@@ -190,9 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Power Up 2: -2066303639
-      Power Up 1: -863126584
-      spritesheet_items_0: -1573645808
+      Spikes: -1497021219
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
