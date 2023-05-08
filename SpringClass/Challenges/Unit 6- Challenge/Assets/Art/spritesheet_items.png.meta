@@ -125,7 +125,7 @@ TextureImporter:
         width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,6 +133,48 @@ TextureImporter:
       bones: []
       spriteID: d9ed9e5b05647144cb83678e583df058
       internalID: -1573645808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Up 1
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 424
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569f8250d294ae641aca39d01d597c44
+      internalID: -863126584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Up 2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 40
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2278614b9d9cee84c971c7ad6bc2ecd5
+      internalID: -2066303639
       vertices: []
       indices: 
       edges: []
@@ -148,6 +190,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Power Up 2: -2066303639
+      Power Up 1: -863126584
       spritesheet_items_0: -1573645808
   spritePackingTag: 
   pSDRemoveMatte: 0
