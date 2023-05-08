@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     private ScoreManager theScoreManager;
 
+    public bool powerupReset;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +68,9 @@ public class GameManager : MonoBehaviour
         thePlayer.gameObject.SetActive(true);
 
         theScoreManager.scoreCount = 0;
-        theScoreManager.scoreIncreasing = true; 
+        theScoreManager.scoreIncreasing = true;
+
+        powerupReset = true;
     } 
 
 }
